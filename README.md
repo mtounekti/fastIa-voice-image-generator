@@ -203,6 +203,20 @@ pip install pytest httpx
 pytest tests/test_api.py -v
 ```
 
+### ⏱️ Durée des tests
+
+Les tests sont longs à cause du **chargement des modèles IA** au démarrage de chaque session de test
+
+### 💡 Astuce pour tester plus vite
+
+```bash
+# Ignorer les tests de génération d'image (les plus lents)
+pytest tests/test_api.py -v -k "not generation_image"
+
+# Lancer un seul test
+pytest tests/test_api.py::test_root_status_code -v
+```
+
 ---
 
 ## 👤 Auteur
