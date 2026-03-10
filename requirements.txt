@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+requests
+transformers
+torch
+diffusers
+accelerate
+soundfile
+numpy
+loguru
+pytest
+httpx
